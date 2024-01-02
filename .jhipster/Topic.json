@@ -1,0 +1,69 @@
+{
+  "annotations": {
+    "changelogDate": "20240102021517"
+  },
+  "applications": "*",
+  "entityTableName": "topic",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "minimalRole",
+      "fieldType": "Role",
+      "fieldValues": "ADMIN,MODERATOR,POWER_VYKYUSER,VYKYUSER,READER"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "PostStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "REGULAR,HIDDEN,EXPELLED"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "deletedAt",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "name": "Topic",
+  "relationships": [
+    {
+      "otherEntityName": "area",
+      "relationshipName": "area",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "vykyUser",
+      "relationshipName": "vykyUser",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

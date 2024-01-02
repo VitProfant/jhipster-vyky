@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20240102021917"
+  },
+  "applications": "*",
+  "entityTableName": "message_recipient_attrs",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "isRead",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isDeleted",
+      "fieldType": "Boolean"
+    }
+  ],
+  "name": "MessageRecipientAttrs",
+  "relationships": [
+    {
+      "otherEntityName": "message",
+      "relationshipName": "message",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "vykyUser",
+      "relationshipName": "recipient",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

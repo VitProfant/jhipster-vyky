@@ -1,0 +1,48 @@
+{
+  "annotations": {
+    "changelogDate": "20240102021817"
+  },
+  "applications": "*",
+  "entityTableName": "message",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "deletedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "deletedByAuthor",
+      "fieldType": "Boolean"
+    }
+  ],
+  "name": "Message",
+  "relationships": [
+    {
+      "otherEntityName": "message",
+      "relationshipName": "parent",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "vykyUser",
+      "relationshipName": "author",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,41 @@
+{
+  "annotations": {
+    "changelogDate": "20240102022017"
+  },
+  "applications": "*",
+  "entityTableName": "config",
+  "fields": [
+    {
+      "fieldName": "configItem",
+      "fieldType": "ConfigItem",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "HIDDEN_POST_TEXT,VYKYUSER_EDIT_POST_EXPIRES,MAX_IMAGES_CNT_PER_POST"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "deletedAt",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "name": "Config",
+  "relationships": [],
+  "searchEngine": "no"
+}

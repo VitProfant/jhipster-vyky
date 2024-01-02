@@ -1,0 +1,29 @@
+{
+  "jhipsterVykyApp": {
+    "config": {
+      "home": {
+        "title": "Configs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Config",
+        "createOrEditLabel": "Vytvořit nebo upravit Config",
+        "notFound": "No Configs found"
+      },
+      "created": "Byl vytvořen potomek entity Config s identifikátorem {{ param }}",
+      "updated": "Potomek entity Config s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Config s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Config {{ id }}?"
+      },
+      "detail": {
+        "title": "Config"
+      },
+      "id": "ID",
+      "configItem": "Config Item",
+      "version": "Version",
+      "value": "Value",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At"
+    }
+  }
+}

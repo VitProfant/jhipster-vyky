@@ -48,6 +48,16 @@ public class CacheConfiguration {
             createCache(cm, net.vyky.domain.User.class.getName());
             createCache(cm, net.vyky.domain.Authority.class.getName());
             createCache(cm, net.vyky.domain.User.class.getName() + ".authorities");
+            createCache(cm, net.vyky.domain.Candidate.class.getName());
+            createCache(cm, net.vyky.domain.VykyUser.class.getName());
+            createCache(cm, net.vyky.domain.Avatar.class.getName());
+            createCache(cm, net.vyky.domain.Area.class.getName());
+            createCache(cm, net.vyky.domain.Topic.class.getName());
+            createCache(cm, net.vyky.domain.Post.class.getName());
+            createCache(cm, net.vyky.domain.Thumb.class.getName());
+            createCache(cm, net.vyky.domain.Message.class.getName());
+            createCache(cm, net.vyky.domain.MessageRecipientAttrs.class.getName());
+            createCache(cm, net.vyky.domain.Config.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

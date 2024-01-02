@@ -1,0 +1,11 @@
+export enum Role {
+  ADMIN = 'ADMIN',
+
+  MODERATOR = 'MODERATOR',
+
+  POWER_VYKYUSER = 'POWER_VYKYUSER',
+
+  VYKYUSER = 'VYKYUSER',
+
+  READER = 'READER',
+}

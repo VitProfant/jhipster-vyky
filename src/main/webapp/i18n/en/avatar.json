@@ -1,0 +1,30 @@
+{
+  "jhipsterVykyApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Avatar",
+        "createOrEditLabel": "Create or edit a Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "A new Avatar is created with identifier {{ param }}",
+      "updated": "A Avatar is updated with identifier {{ param }}",
+      "deleted": "A Avatar is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "Id",
+      "mime": "Mime",
+      "img": "Img",
+      "active": "Active",
+      "activationAt": "Activation At",
+      "createdAt": "Created At",
+      "deletedAt": "Deleted At",
+      "vykyUser": "Vyky User"
+    }
+  }
+}

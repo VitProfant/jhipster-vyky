@@ -1,0 +1,142 @@
+entity Candidate {
+  id Long unique required
+  login String unique required
+  password String required
+  email String unique required
+  token String required
+  createdAt ZonedDateTime required
+  deletedAt ZonedDateTime
+}
+
+entity VykyUser {
+  id Long unique required
+  version Integer required
+  login String unique required
+  password String required
+  email String unique required
+  role Role required
+  messagesReadAt ZonedDateTime
+  reactionsReadAt ZonedDateTime
+  lastActivity ZonedDateTime
+  createdAt ZonedDateTime required
+  updatedAt ZonedDateTime
+  deletedAt ZonedDateTime
+}
+
+entity Avatar {
+  id Long unique required
+  mime String required
+  img ImageBlob required
+  active Boolean
+  activationAt ZonedDateTime
+  createdAt ZonedDateTime required
+  deletedAt ZonedDateTime
+}
+
+enum Role {
+  ADMIN,
+  MODERATOR,
+  POWER_VYKYUSER,
+  VYKYUSER,
+  READER
+}
+
+entity Area {
+  id Long unique required
+  version Integer required
+  level Integer required
+  name String unique required
+  minimalRole Role
+  parentId Long
+  createdAt ZonedDateTime required
+  updatedAt ZonedDateTime
+  deletedAt ZonedDateTime
+}
+
+entity Topic {
+  id Long unique required
+  version Integer required
+  name String unique required
+  description String required
+  minimalRole Role
+  status PostStatus required
+  createdAt ZonedDateTime required
+  updatedAt ZonedDateTime
+  deletedAt ZonedDateTime
+}
+
+entity Post {
+  id Long unique required
+  version Integer required
+  level Integer required
+  title String required
+  content String required
+  status PostStatus required
+  minimalRole Role
+  parentId Long
+  upvotes Integer
+  downvotes Integer
+  createdAt ZonedDateTime required
+  updatedAt ZonedDateTime
+  deletedAt ZonedDateTime
+}
+
+enum PostStatus {
+  REGULAR,
+  HIDDEN,
+  EXPELLED
+}
+
+entity Thumb {
+  id Long unique required
+  version Integer required
+  up Boolean required
+  createdAt ZonedDateTime required
+  updatedAt ZonedDateTime
+  deletedAt ZonedDateTime
+}
+
+entity Message {
+  id Long unique required
+  content String required
+  createdAt ZonedDateTime required
+  deletedAt ZonedDateTime
+  deletedByAuthor Boolean
+}
+
+entity MessageRecipientAttrs {
+  id Long unique required
+  isRead Boolean
+  isDeleted Boolean
+}
+
+entity Config {
+  configItem ConfigItem required
+  version Integer required
+  value String required
+  createdAt ZonedDateTime required
+  updatedAt ZonedDateTime
+  deletedAt ZonedDateTime
+}
+
+enum ConfigItem {
+  HIDDEN_POST_TEXT,
+  VYKYUSER_EDIT_POST_EXPIRES,
+  MAX_IMAGES_CNT_PER_POST
+}
+
+relationship ManyToOne {
+  Avatar{vykyUser} to VykyUser
+  Area{parent} to Area
+  Topic{area} to Area
+  Topic{vykyUser} to VykyUser
+  Post{topic} to Topic
+  Post{parent} to Post
+  Post{author} to VykyUser
+  Thumb{post} to Post
+  Thumb{vykyUser} to VykyUser
+  Message{parent} to Message
+  MessageRecipientAttrs{message} to Message
+  Message{author} to VykyUser
+  MessageRecipientAttrs{recipient} to VykyUser
+}

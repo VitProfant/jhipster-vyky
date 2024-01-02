@@ -1,0 +1,27 @@
+{
+  "jhipsterVykyApp": {
+    "messageRecipientAttrs": {
+      "home": {
+        "title": "Message Recipient Attrs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Message Recipient Attrs",
+        "createOrEditLabel": "Vytvořit nebo upravit Message Recipient Attrs",
+        "notFound": "No Message Recipient Attrs found"
+      },
+      "created": "Byl vytvořen potomek entity Message Recipient Attrs s identifikátorem {{ param }}",
+      "updated": "Potomek entity Message Recipient Attrs s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Message Recipient Attrs s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Message Recipient Attrs {{ id }}?"
+      },
+      "detail": {
+        "title": "Message Recipient Attrs"
+      },
+      "id": "Id",
+      "isRead": "Is Read",
+      "isDeleted": "Is Deleted",
+      "message": "Message",
+      "recipient": "Recipient"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "annotations": {
+    "changelogDate": "20240102021217"
+  },
+  "applications": "*",
+  "entityTableName": "vyky_user",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "login",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "role",
+      "fieldType": "Role",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ADMIN,MODERATOR,POWER_VYKYUSER,VYKYUSER,READER"
+    },
+    {
+      "fieldName": "messagesReadAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "reactionsReadAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "lastActivity",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "deletedAt",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "name": "VykyUser",
+  "relationships": [],
+  "searchEngine": "no"
+}

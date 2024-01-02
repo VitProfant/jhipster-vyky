@@ -1,0 +1,30 @@
+{
+  "jhipsterVykyApp": {
+    "thumb": {
+      "home": {
+        "title": "Thumbs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Thumb",
+        "createOrEditLabel": "Vytvořit nebo upravit Thumb",
+        "notFound": "No Thumbs found"
+      },
+      "created": "Byl vytvořen potomek entity Thumb s identifikátorem {{ param }}",
+      "updated": "Potomek entity Thumb s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Thumb s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Thumb {{ id }}?"
+      },
+      "detail": {
+        "title": "Thumb"
+      },
+      "id": "Id",
+      "version": "Version",
+      "up": "Up",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "post": "Post",
+      "vykyUser": "Vyky User"
+    }
+  }
+}

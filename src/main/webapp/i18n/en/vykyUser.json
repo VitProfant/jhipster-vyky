@@ -1,0 +1,34 @@
+{
+  "jhipsterVykyApp": {
+    "vykyUser": {
+      "home": {
+        "title": "Vyky Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Vyky User",
+        "createOrEditLabel": "Create or edit a Vyky User",
+        "notFound": "No Vyky Users found"
+      },
+      "created": "A new Vyky User is created with identifier {{ param }}",
+      "updated": "A Vyky User is updated with identifier {{ param }}",
+      "deleted": "A Vyky User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vyky User {{ id }}?"
+      },
+      "detail": {
+        "title": "Vyky User"
+      },
+      "id": "Id",
+      "version": "Version",
+      "login": "Login",
+      "password": "Password",
+      "email": "Email",
+      "role": "Role",
+      "messagesReadAt": "Messages Read At",
+      "reactionsReadAt": "Reactions Read At",
+      "lastActivity": "Last Activity",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At"
+    }
+  }
+}

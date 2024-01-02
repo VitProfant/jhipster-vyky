@@ -1,0 +1,27 @@
+{
+  "jhipsterVykyApp": {
+    "messageRecipientAttrs": {
+      "home": {
+        "title": "Message Recipient Attrs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Message Recipient Attrs",
+        "createOrEditLabel": "Create or edit a Message Recipient Attrs",
+        "notFound": "No Message Recipient Attrs found"
+      },
+      "created": "A new Message Recipient Attrs is created with identifier {{ param }}",
+      "updated": "A Message Recipient Attrs is updated with identifier {{ param }}",
+      "deleted": "A Message Recipient Attrs is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Message Recipient Attrs {{ id }}?"
+      },
+      "detail": {
+        "title": "Message Recipient Attrs"
+      },
+      "id": "Id",
+      "isRead": "Is Read",
+      "isDeleted": "Is Deleted",
+      "message": "Message",
+      "recipient": "Recipient"
+    }
+  }
+}

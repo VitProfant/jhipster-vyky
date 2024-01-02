@@ -1,0 +1,30 @@
+{
+  "jhipsterVykyApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Avatar",
+        "createOrEditLabel": "Vytvořit nebo upravit Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "Byl vytvořen potomek entity Avatar s identifikátorem {{ param }}",
+      "updated": "Potomek entity Avatar s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Avatar s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "Id",
+      "mime": "Mime",
+      "img": "Img",
+      "active": "Active",
+      "activationAt": "Activation At",
+      "createdAt": "Created At",
+      "deletedAt": "Deleted At",
+      "vykyUser": "Vyky User"
+    }
+  }
+}
