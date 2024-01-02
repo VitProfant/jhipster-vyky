@@ -1,0 +1,29 @@
+{
+  "jhipsterVykyApp": {
+    "candidate": {
+      "home": {
+        "title": "Candidates",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Candidate",
+        "createOrEditLabel": "Vytvořit nebo upravit Candidate",
+        "notFound": "No Candidates found"
+      },
+      "created": "Byl vytvořen potomek entity Candidate s identifikátorem {{ param }}",
+      "updated": "Potomek entity Candidate s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Candidate s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Candidate {{ id }}?"
+      },
+      "detail": {
+        "title": "Candidate"
+      },
+      "id": "Id",
+      "login": "Login",
+      "password": "Password",
+      "email": "Email",
+      "token": "Token",
+      "createdAt": "Created At",
+      "deletedAt": "Deleted At"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "jhipsterVykyApp": {
+    "Role": {
+      "null": "",
+      "ADMIN": "ADMIN",
+      "MODERATOR": "MODERATOR",
+      "POWER_VYKYUSER": "POWER_VYKYUSER",
+      "VYKYUSER": "VYKYUSER",
+      "READER": "READER"
+    }
+  }
+}

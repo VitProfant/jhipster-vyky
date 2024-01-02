@@ -1,0 +1,10 @@
+{
+  "jhipsterVykyApp": {
+    "PostStatus": {
+      "null": "",
+      "REGULAR": "REGULAR",
+      "HIDDEN": "HIDDEN",
+      "EXPELLED": "EXPELLED"
+    }
+  }
+}

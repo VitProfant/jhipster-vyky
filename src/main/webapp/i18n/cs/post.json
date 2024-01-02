@@ -1,0 +1,38 @@
+{
+  "jhipsterVykyApp": {
+    "post": {
+      "home": {
+        "title": "Posts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Post",
+        "createOrEditLabel": "Vytvořit nebo upravit Post",
+        "notFound": "No Posts found"
+      },
+      "created": "Byl vytvořen potomek entity Post s identifikátorem {{ param }}",
+      "updated": "Potomek entity Post s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Post s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Post {{ id }}?"
+      },
+      "detail": {
+        "title": "Post"
+      },
+      "id": "Id",
+      "version": "Version",
+      "level": "Level",
+      "title": "Title",
+      "content": "Content",
+      "status": "Status",
+      "minimalRole": "Minimal Role",
+      "parentId": "Parent Id",
+      "upvotes": "Upvotes",
+      "downvotes": "Downvotes",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "topic": "Topic",
+      "parent": "Parent",
+      "author": "Author"
+    }
+  }
+}

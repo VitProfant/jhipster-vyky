@@ -1,0 +1,33 @@
+{
+  "jhipsterVykyApp": {
+    "topic": {
+      "home": {
+        "title": "Topics",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Topic",
+        "createOrEditLabel": "Vytvořit nebo upravit Topic",
+        "notFound": "No Topics found"
+      },
+      "created": "Byl vytvořen potomek entity Topic s identifikátorem {{ param }}",
+      "updated": "Potomek entity Topic s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Topic s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Topic {{ id }}?"
+      },
+      "detail": {
+        "title": "Topic"
+      },
+      "id": "Id",
+      "version": "Version",
+      "name": "Name",
+      "description": "Description",
+      "minimalRole": "Minimal Role",
+      "status": "Status",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "area": "Area",
+      "vykyUser": "Vyky User"
+    }
+  }
+}

@@ -7,7 +7,17 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entity",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "candidate": "Candidate",
+        "vykyUser": "Vyky User",
+        "avatar": "Avatar",
+        "area": "Area",
+        "topic": "Topic",
+        "post": "Post",
+        "thumb": "Thumb",
+        "message": "Message",
+        "messageRecipientAttrs": "Message Recipient Attrs",
+        "config": "Config"
       },
       "account": {
         "main": "Účet",

@@ -1,0 +1,32 @@
+{
+  "jhipsterVykyApp": {
+    "area": {
+      "home": {
+        "title": "Areas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Area",
+        "createOrEditLabel": "Vytvořit nebo upravit Area",
+        "notFound": "No Areas found"
+      },
+      "created": "Byl vytvořen potomek entity Area s identifikátorem {{ param }}",
+      "updated": "Potomek entity Area s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Area s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Area {{ id }}?"
+      },
+      "detail": {
+        "title": "Area"
+      },
+      "id": "Id",
+      "version": "Version",
+      "level": "Level",
+      "name": "Name",
+      "minimalRole": "Minimal Role",
+      "parentId": "Parent Id",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "parent": "Parent"
+    }
+  }
+}
